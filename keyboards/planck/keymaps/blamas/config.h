@@ -1,13 +1,15 @@
 #pragma once
 
+//#define UNICODE_SELECTED_MODES UC_LNX, UC_OSX, UC_WIN, UC_WINC
+
 #ifdef AUDIO_ENABLE
     #define STARTUP_SONG SONG(PLANCK_SOUND)
+    #define UNICODE_SONG_LNX  SONG(UNICODE_LINUX)
+    #define UNICODE_SONG_OSX  SONG(CAPS_LOCK_ON_SOUND)
+    #define UNICODE_SONG_BSD  SONG(CAPS_LOCK_ON_SOUND)
+    #define UNICODE_SONG_WIN  SONG(UNICODE_WINDOWS)
+    #define UNICODE_SONG_WINC SONG(UNICODE_WINDOWS)
     // #define STARTUP_SONG SONG(NO_SOUND)
-
-    #define DEFAULT_LAYER_SONGS { SONG(QWERTY_SOUND), \
-                                  SONG(COLEMAK_SOUND), \
-                                  SONG(DVORAK_SOUND) \
-                                }
 #endif
 
 /*
